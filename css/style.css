@@ -314,6 +314,16 @@ h1{
 }
 
 .contact input{
-    height: 47px;
-    margin-bottom: 10px;
+    height: 43px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border:solid var(--col-yellow);
 }
+
+.contact textarea{
+    height: 63px;
+    border-radius: 5px;
+    border:solid var(--col-yellow);
+    
+}
+
