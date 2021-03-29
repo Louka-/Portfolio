@@ -89,7 +89,7 @@ h1{
 
 }
 
-.findorange::before{
+.findgreen::before{
     content: "";
     display: block;
     position: absolute;
@@ -102,7 +102,7 @@ h1{
     padding-left: inherit;
     padding-right: inherit; */
     border-radius:inherit ;
-    background: var(--col-orange);
+    background: var(--col-green);
     z-index: -1;
 }
 
@@ -309,6 +309,11 @@ h1{
 
 /* contact */
 
-.contacts h1{
+.contact h1{
     color: black;
+}
+
+.contact input{
+    height: 47px;
+    margin-bottom: 10px;
 }
