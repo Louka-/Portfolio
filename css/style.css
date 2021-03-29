@@ -1,0 +1,314 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* règles générales */
+
+:root {
+    --col-green: #6FA880;
+    --col-green-o: #6fa880a1;
+    --col-text-light: #d1d1d1;
+    --col-gray-dark:#343a40;
+    --col-white: white;
+    --col-yellow: #BFA237;
+    --col-yellow-o: #bfa237ad;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 63px;
+    color: white;
+}
+
+.navbar a{
+    font-family: 'Dancing Script', cursive;
+    font-size: 26px;
+}
+
+
+
+.borderimg{
+    border-radius: 2rem;
+}
+
+ figure{
+    margin: 0;
+    padding: 0;
+} 
+
+.line {
+    width: 80px;
+    height: 2px;
+}
+
+.line2 {
+    width: 80px;
+    height: 6px;
+}
+
+.line3{
+    width: 10px;
+    height: 1000px;
+    background: var(--col-yellow);
+    box-shadow: 0px 0px 21px 19px var(--col-yellow-o);   
+}
+
+
+
+.bg-green-border {
+    background: var(--col-green);
+    border: solid;
+    border-color: rgba(191, 162, 8, 1);
+}
+
+.bg-green {
+    background: var(--col-green);
+}
+
+.bg-white {
+    background: transparent;
+    border-radius: 2rem;
+}
+
+.bg-yellow{
+    background: var(--col-yellow);
+}
+
+.find{
+    position:relative;
+    z-index: 1;
+
+}
+
+.findorange::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* padding-top: inherit;
+    padding-bottom: inherit;
+    padding-left: inherit;
+    padding-right: inherit; */
+    border-radius:inherit ;
+    background: var(--col-orange);
+    z-index: -1;
+}
+
+.findwhite::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* padding-top: inherit;
+    padding-bottom: inherit;
+    padding-left: inherit;
+    padding-right: inherit; */
+    border-radius:inherit ;
+    background: var(--col-white);
+    z-index: -1;
+}
+
+.find:hover::before{
+    transition: 1.2s;
+    transform: scale(1.5);
+    opacity: 0;
+}
+
+.orange{
+    color: var(--col-yellow);
+}
+
+
+
+.bg-graydark{
+    background: var(--col-gray-dark)
+}
+
+
+
+/* padding horizontale de Bootstrap 5 surchargé */
+
+
+.px-5 {
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+}
+
+.px-4 {
+    padding-right: 4rem !important;
+    padding-left: 4rem !important;
+}
+
+.px-3 {
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+}
+
+.px-2 {
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+}
+
+.px-1 {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+
+.py-5 {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+.py-4 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+.py-3 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.py-2 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+.py-1 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+
+.text-light {
+    color: var(--col-text-light) !important;
+}
+
+/* Header */
+
+
+.header {
+    background: url(../img/fond.jpeg) no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+/* gallery */
+
+.masque{
+    opacity: 0;
+    transition: .3s;
+    background: var(--col-green-o);
+}
+
+.gallery figure:hover .masque{
+    opacity: 1;
+}
+
+.gallery h2 {
+    font-size: clamp(2.2rem, 5vw, 2.5rem);
+}
+
+.masque2{
+    opacity: 0;
+    transition: .3s;
+    background: var(--col-orange);
+}
+
+.parcours a:hover .masque2{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Parcours */
+
+.parcours {
+    background: url(../img/route2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.chemin {
+    height: 250px;
+    border: 10px solid var(--col-gray-dark);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.chemin img {
+    height: 100%;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.chemin:hover img {
+    transform: rotate(0deg) scale(1.1);
+}
+
+.chemin:hover .volet {
+    transform: translateX(0);
+    transform: translateY(0);
+}
+
+.volet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(100% 58%, 100% 89%, 0 100%, 0 84%);
+    background: rgba(191, 162, 8, 0.60);
+    width: 100%;
+    height: 100%;  
+    transform: translateX(0%);
+    transform: translateY(42%);
+    transition: .3s;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+.volet2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    transform: rotate(-6deg) scale(1);
+    color: var(--col-white);
+}
+
+
+
+/* contact */
+
+.contacts h1{
+    color: black;
+}
