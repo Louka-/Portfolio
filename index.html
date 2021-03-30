@@ -45,9 +45,9 @@
     <header id="header" class="header">
         <div class="container">
             <div class="row align-content-center justify-content-center text-center vh-100">
-                <div class="col-11">
+                <div class="col-12">
                     <h1 class=" text-white">Simon Haudegond</h1>
-                    <div class="line bg-green mx-auto my-4"></div>
+                    <div class="col-12"><img src="./img/ligne.png" class="w-25" alt=""></div>
                 </div>
                 <div class="col-11">
                     <p class="text-white">Web Developpeur Junior</p>
@@ -60,26 +60,31 @@
 
     <!-- Présentation -->
 
-    <section id="presentation" class="bg-green py-2">
+    <section id="presentation" class="bg-green">
         <div class="container">
             <div class="row text-center justify-content-center">
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-12">
                     <div class="justify-content-center">
-                        <h1 class="text-white py-2">Présentation</h1>
-                        <div class="col-12 d-flex justify-content-center">
-                            <figure class="w-50">
-                                <img src="./img/Photo.jpg" alt="" class="img-fluid borderimg">
+                        <h1 class="text-white pyt-2">Présentation</h1>
+                        <div class="col-12"><img src="./img/ligne.png" class="w-25" alt=""></div>
+                    </div>
+                        
+                        <div class="col-12 py-2 d-flex justify-content-center">
+                            <figure>
+                                <img src="./img/Photo.jpg" alt="" class="w-50 img-fluid borderimg">
                             </figure>
                         </div>
                         <div class="line bg-white mx-auto my-4"></div>
-                        <p class="mb-4 text-light">Tout d'abord, bienvenu! Mieux qu'une multitude de mot, la meilleure
+                        <div class="text-light">Tout d'abord, bienvenu! Mieux qu'une multitude de mot, la meilleure
                             façon de se présenter reste de se dévoiler corps et âme. Inspectez, fouillez, 
                             <!-- mais pas trop!!-->
                             et surtout n'oubliez pas de jeter un oeil à <span class="fst-italic">mes travaux</span> !
-                        </p>
-                        <a href="#gallery" class="find findwhite btn bg-white fw-bold">Allons
-                            voir!</a>
-                    </div>
+                        </div>
+                        <div class="py-2">
+                            <a href="#gallery" class="find findwhite btn bg-white fw-bold">Allons
+                                voir!</a>
+
+                        </div>
 
                 </div>
             </div>
@@ -88,10 +93,11 @@
 
     <!-- mon parcours -->
 
-    <section id="parcours" class="py-2 parcours">
+    <section id="parcours" class="parcours">
         <div class="container">
             <div class="col-12 justify-content-center text-center">
-                <h1 class="mb-5 text-white">Mon parcours</h1>
+                <h1 class="pyt-2 text-white">Mon parcours</h1>
+                <div class="col-12"><img src="./img/ligne.png" class="w-25" alt=""></div>
             </div>
 
             <div class="row py-2">
@@ -214,10 +220,10 @@
 
     <section id="competences" class="bg-green">
         <div class="container">
-            <div class="row justify-content-center text-center py-2">
+            <div class="row justify-content-center text-center">
                 <div class="col-12">
-                    <h1 class="py-1 text-black">Mes compétences</h1>
-                    <div class="line bg-orange mx-auto my-5"></div>
+                    <h1 class="pyt-2">Mes compétences</h1>   
+                    <div class="col-12"><img src="./img/ligne.png" class="w-25" alt=""></div>
                 </div>
             </div>
 
@@ -247,17 +253,18 @@
 
     <!-- Portfolio -->
 
-    <section id="gallery" class="gallery pb-5 bg-graydark">
+    <section id="gallery" class="gallery parcours">
 
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-12">
-                    <h1 class="py-2">Mes travaux</h1>
+                    <h1 class="pyt-2">Mes travaux </h1>        
+                    <div class="col-12"><img src="./img/ligne.png" class="w-25" alt=""></div>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid py-3">
             <div class="row text-white">
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="">
@@ -266,7 +273,7 @@
                             <div
                             class="masque w-100 h-100 position-absolute top-0 left-0 d-flex flex-column justify-content-center align-items-center bg-orange">
                             <h3>Gitalian Food</h3>
-                            <p>Cliquez <a href="https://louka-.github.io/GitalianFood/" target="_blank">ici</a> pour visiter le site</p>
+                            <p>Cliquez <a href="https://louka-.github.io/GitalianFood/" class="graydark fw-bold" target="_blank">ici</a> pour visiter le site</p>
                             
                             
                             </div>
@@ -337,12 +344,11 @@
     <section id="contact" class="contact bg-green">
         <div class="container">
             <div class="row justify-content-center text-center">
-                <div class="col-12 col-lg-8">
-                    <h1 class="py-2">Me contacter</h1>
-                    <div class="line bg-orange"></div>
-                    <p>Ici, tout ce dont vous aurez besoin pour me contacter dans les meilleurs délais!</p>
+                <div class="col-12">
+                    <h1 class="pyt-2">Me contacter</h1>
+                    <div class="col-12"><img src="./img/ligne.png" class="w-25" alt=""></div>
                 </div>
-
+                <p class="py-3">Ici, tout ce dont vous aurez besoin pour me contacter dans les meilleurs délais!</p>
             </div>
 
             <div class="row justify-content-center text-center">
@@ -387,9 +393,9 @@
     <!-- footer -->
 
 
-    <section>
-        <div class=" container-fluid bg-light">
-            <div class="row justify-content-center text-center">
+    <section class="bg-light">
+        <div class=" container-fluid">
+            <div class="row justify-content-center align-items-center text-center">
                 <div class="justify-content-center col-12 col-sm-6 col-md-3">
                     <div class="text-center">
                         Simon Haudegond
@@ -398,8 +404,8 @@
 
                 <div class="justify-content-center col-12 col-sm-6 col-md-3 ">
                     <div class="text-center">
-                        <a class="fa fa-github btn" aria-hidden="true" href="https://github.com/Louka-"></a>
-                        <a class="fa fa-codepen btn" aria-hidden="true" href="https://codepen.io/SimonHdg"></a>
+                        <a class="fa fa-github btn" aria-hidden="true" target="_blank" href="https://github.com/Louka-"></a>
+                        <a class="fa fa-codepen btn" aria-hidden="true" target="_blank" href="https://codepen.io/SimonHdg"></a>
                     </div>
                 </div>
 
