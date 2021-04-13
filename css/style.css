@@ -295,6 +295,7 @@ h3{
 @media screen and (max-width:768px) {
     .navTrigger {
         display: block;
+        -webkit-display: block;
     }
 
     .nav div.logo {
@@ -312,10 +313,12 @@ h3{
     .nav div.show_list {
         height: auto;
         display: none;
+        -webkit-display: none;
     }
 
     .nav div.main_list ul {
         display: block;
+        -webkit-display: block;
         width: 100%;
         height: auto;
         background-color: #111;
@@ -329,6 +332,7 @@ h3{
         height: 40px;
         padding-right: 15px;
         display: flex;
+        -webkit-display: flex;
         justify-content: center;
         width: 100%;
     }
@@ -336,11 +340,13 @@ h3{
     .nav div.main_list ul li a {
         font-size: 17px;
         display: flex;
+        -webkit-display: flex;
         align-items: center;   
     }
 
     .nav div.media_button {
         display: block;
+        -webkit-display: block;
     }
 }
 
@@ -364,6 +370,7 @@ h3{
     border-radius: 2px;
     content: '';
     display: block;
+    -webkit-display: block;
     width: 100%;
     height: 4px;
 }
