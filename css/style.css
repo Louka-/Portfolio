@@ -233,7 +233,7 @@ h3{
 .nav div.logo {
     float: left;
     padding-left: 1.6rem;
-    overflow: visible;
+    display: -webkit-flex;
 }
 
 .nav div.main_list {
@@ -246,6 +246,7 @@ h3{
     height: 65px;
     list-style: none;
     padding: 0;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
 }
@@ -253,6 +254,7 @@ h3{
 .nav div.main_list ul li {
     height: 40px;
     padding-right: 30px;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
 }
